@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Replica</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top Header */
+        .header > ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            background-color: #045694;
+            color: white;
+            padding: 6px 0;
+            margin: 0;
+        }
+
+        .header > ul li {
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        /* Main Navigation */
+        .nav-section {
+            display: flex;
+            align-items: center;
+            background-color: #045694;
+            padding: 0 20px;
+        }
+
+        .nav-section h1 {
+            color: white;
+            margin: 0;
+            padding-right: 30px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+
+        .main-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #004c80;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1 1 450px;
+        }
+
+        .hero-kicker {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+            margin: 0 0 12px;
+            font-weight: bold;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+
+        .hero-button {
+            background-color: white;
+            color: #004c80;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .hero-button:hover {
+            background-color: #e6e6e6;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #045694;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .footer-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .sponsors {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sponsors img {
+            background: white;
+            border-radius: 4px;
+            padding: 4px;
+            height: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .footer-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .app-badges {
+            display: flex;
+            gap: 10px;
+        }
+
+        .app-badges img {
+            border-radius: 6px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <ul>
+            <li>TICKETS & HOSPITALITY</li>
+            <li>FIFA STORE</li>
+            <li>FIFA COLLECT</li>
+            <li>INSIDE FIFA</li>
+        </ul>
+    </div>
+
+    <div class="nav-section">
+        <h1>FIFA</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">TOURNAMENTS</a></li>
+                <li><a href="#">MATCH CENTER</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">RANKINGS</a></li>
+                <li><a href="#">WATCH ON FIFA+</a></li>
+                <li><a href="#">PLAY</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">INSIDE FIFA</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   
+    <main class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="hero-kicker">FIFA World Cup™ 2026</p>
+                <h1 class="hero-title">The Greatest Football Show on Earth</h1>
+                <p class="hero-description">
+                    Join us for the most anticipated football event in history. Experience thrilling matches, legendary players, and unforgettable moments.
+                </p>
+                <a href="#" class="hero-button">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://digitalhub.fifa.com/transform/23f98d23-91c4-4211-8459-a7eeb5f7d729/Giuseppe-Rossi?&io=transform:fill,aspectratio:1x1,width:600&quality=75" alt="Hero Graphic">
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">FIFA</div>
+            <div class="sponsors">
+                <img src="./fifa_fp_adidas-co_dbgr.png" alt="Adidas">
+                <img src="./fifa_fp_cocacola-co_dbgr.png" alt="Coca-Cola">
+                <img src="./fifa_fp_aramco_dbgr.png" alt="Aramco">
+            </div>
+            <div class="social-links">
+                <!-- Add your social icons here -->
+            </div>
+            <div class="footer-bottom">
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Services</a></li>
+                    <li><a href="#">Manage Cookies</a></li>
+                </ul>
+                <div class="app-badges">
+                    <img src="./appleAppStore.png" alt="App Store">
+                    <img src="./googlePlay.png" alt="Google Play">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

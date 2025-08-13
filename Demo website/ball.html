@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* img:hover{
+            rotate:360deg;
+            cursor:pointer;
+            transition-duration:10s;
+            animation:ball 2s linear infinite;
+        } */
+          img{
+            animation: ball 2s infinite;
+          }
+        @keyframes ball{
+            /* from{transform:translateX(0px,0px)}
+            to{transform: translate(100px,100px);} */
+            0%{
+                transform:translateY(-500px)rotate(180deg);
+            }
+            50%{
+                transform:translateY(500px)rotate(220deg);
+            }
+
+            75%{
+                 transform:translateY(300px)rotate(320deg);
+            }
+              
+            100%{
+                transform:translateY(800px)rotate(360deg);
+            }
+        }
+    </style>
+    <img src="https://tse3.mm.bing.net/th/id/OIP.YeAnONjmc0sXXmOinQWD4AHaIA?pid=Api&P=0&h=180" alt="ball">
+</body>
+</html>
