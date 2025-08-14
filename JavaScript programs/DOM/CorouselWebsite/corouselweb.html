@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            /* padding: 0;
+            box-sizing: border-box; */
+        }
+        #container{
+            transition-duration: 1s;
+            background-image: url(./assets/waterfall.jpg);
+            height: 100vh;
+            width:100%;
+            background-size:100% 100%;
+            /* background-position: left; */
+            /* background-repeat: no-repeat;
+            background-position: center; */
+           
+
+        }
+
+        .mini img{
+            height:80px;
+            width: 120px;
+        }
+        .mini{
+            display: flex;
+            position: absolute;
+            bottom: 20%;
+            right: 100px;
+        }
+        .arrow img{
+            height: 80px;
+            }
+        #arrow1{
+            position:absolute ;
+            top:50%;
+            transform: rotateY(180deg);
+            
+        }
+        #arrow2{
+            position:absolute ;
+            right: 0;
+            top: 50%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <div class="arrow">
+            <img onclick="changeimg1()" id="arrow1" src="./assets/—Pngtree—right arrow free map_4680924.png" alt="right">
+            <img onclick="changeimg()" id="arrow2" src="./assets/—Pngtree—right arrow free map_4680924.png" alt="left">
+        </div>
+
+        <div class="mini">
+            <img onclick="change(0)"src="./assets/waterfall.jpg" alt="loading">
+            <img onclick="change(1)"src="./assets/glacier.jpg" alt="loading">
+            <img onclick="change(2)"src="./assets/eve.jpg" alt="loading">
+            <img onclick="change(3)"src="./assets/for.jpg" alt="loading">
+            <img onclick="change(4)"src="./assets/mountain.jpg" alt="loading">
+            <img onclick="change(5)"src="./assets/alg.jpg" alt="loading">
+
+        </div>
+    </div>
+    <script src="./landing.js"></script>
+</body>
+</html>
