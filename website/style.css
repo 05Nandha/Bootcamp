@@ -865,3 +865,44 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/* carousel */
+
+#container{
+             transition-duration: 2s;
+            background-image: url(./assets/galaxy-z-flip7-features-kv.jpg); 
+            height: 100vh;
+            width:100%;
+            background-size:100% 100%;
+            /* background-position: left; */
+            /* background-repeat: no-repeat;
+             /* background-position: center;  */
+        } 
+
+        
+
+        .mini img{
+            height:80px;
+            width: 120px;
+        }
+        .mini{
+            display: flex;
+            position: absolute;
+            bottom: 5%;
+            right: 50px;
+        }
+        .arrow img{
+            height: 80px;
+            }
+        #arrow1{
+            position:absolute ;
+            top:50%;
+            transform: rotateY(180deg);
+            
+        }
+        #arrow2{
+            position:absolute ;
+            right: 0;
+            top: 50%;
+           
+        }
