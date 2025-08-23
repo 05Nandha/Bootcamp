@@ -16,6 +16,10 @@ body {
     padding: 0 20px;
 }
 
+  .header ul{
+            display: none;
+        }
+
 .header {
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -869,14 +873,15 @@ body {
 /* carousel */
 
 #container{
-             transition-duration: 2s;
+    position: relative;
+            transition-duration: 2s;
             background-image: url(./assets/galaxy-z-flip7-features-kv.jpg); 
             height: 100vh;
             width:100%;
             background-size:100% 100%;
             /* background-position: left; */
-            /* background-repeat: no-repeat;
-             /* background-position: center;  */
+            /* background-repeat: no-repeat; */
+             /* background-position: center;   */
         } 
 
         
@@ -884,13 +889,28 @@ body {
         .mini img{
             height:80px;
             width: 120px;
+            opacity: 0.5;
+
+
         }
+
+        .mini .active{
+            opacity: 1;
+        }
+        
         .mini{
             display: flex;
             position: absolute;
             bottom: 5%;
             right: 50px;
         }
+
+        .mini img:hover{
+            transform:scale(1.2) ;
+            opacity: 1;
+        }
+
+
         .arrow img{
             height: 80px;
             }
@@ -906,3 +926,18 @@ body {
             top: 50%;
            
         }
+
+
+         @media screen and (min-width:768px){
+
+           
+            .header ul{
+            background-color: rgb(205, 247, 255);
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 20px;
+            font-size: x-large;
+        }
+    }

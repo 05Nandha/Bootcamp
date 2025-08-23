@@ -7,12 +7,20 @@ const arr=["./assets/galaxy-s24-ultra-highlights-color-carousel-exclusive.jpg",
     "./assets/galaxy-watch8-kv.jpg" 
 ]
 
+const img=document.getElementsByClassName('img');
+console.log(img);
+
+
 let i=0;
 let changeimg=()=>{
+     img[i].classList.remove('active')
       i++;
+      
     if(i==arr.length){
         i=0;
     }
+ img[i].classList.add('active')
+
     con.style.backgroundImage=`url('${arr[i]}')`;
   
 
@@ -30,6 +38,10 @@ let changeimg1=()=>{
 let change=(a)=>{
     con.style.backgroundImage=`url('${arr[a]}')`;
 }
+
+
+
+
 
 setInterval(() => {
     changeimg()
